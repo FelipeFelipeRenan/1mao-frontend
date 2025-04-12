@@ -14,7 +14,12 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  
+  it(`should have the '1mao-frontend' title`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('1mao-frontend');
+  });
+
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();

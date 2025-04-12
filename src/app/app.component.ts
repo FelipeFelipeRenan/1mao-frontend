@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <router-outlet></router-outlet> <!-- Este é o local onde as rotas serão exibidas -->
-  `,
-  styleUrls: ['./app.component.scss']
+  imports: [RouterOutlet],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'your-app-name';
+  title = '1mao-frontend';
 }
